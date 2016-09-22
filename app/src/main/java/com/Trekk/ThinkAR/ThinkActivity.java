@@ -5,20 +5,17 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TableLayout;
@@ -28,9 +25,6 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -57,7 +51,7 @@ public class ThinkActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        buildTableRowsFromJson(loadDataFromAsset());
+        buildTableRowsFromJson();
     }
 
     @Override
@@ -166,27 +160,12 @@ public class ThinkActivity extends AppCompatActivity {
         return Math.round(degrees);
     }
 
-    public String loadDataFromAsset() {
-        String json = null;
-        try {
-            InputStream is = getAssets().open("test.json");
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            json = new String(buffer, "UTF-8");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-        return json;
-    }
-
-    public void buildTableRowsFromJson(String jsonData) {
+    private void buildTableRowsFromJson() {
         try {
             int visited = 0;
 
-            JSONObject obj = new JSONObject(jsonData);
+            JsonHelper json = new JsonHelper();
+            JSONObject obj = new JSONObject(json.loadDataFromAsset(ThinkActivity.this, "test.json"));
 
             TableLayout tl = (TableLayout) findViewById(R.id.vendor_table);
             JSONArray mArry = obj.getJSONArray("vendors");
@@ -203,7 +182,6 @@ public class ThinkActivity extends AppCompatActivity {
                 SharedPreferences sharedPref = getSharedPreferences("vendor_id", MODE_PRIVATE);
 
                 if (sharedPref.contains(name)) {
-                    Log.i("tgrable", "SharedPreferences contains: " + name);
                     ImageView checkIcon = new ImageView(this);
                     checkIcon.setImageResource(R.drawable.check_mark);
                     checkIcon.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
@@ -213,7 +191,6 @@ public class ThinkActivity extends AppCompatActivity {
                     visited = visited + 1;
                 }
                 else {
-                    Log.i("tgrable", "SharedPreferences does not contain: " + name);
                     TextView vendorsString = new TextView(this);
                     vendorsString.setText("");
                     vendorsString.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
@@ -246,7 +223,6 @@ public class ThinkActivity extends AppCompatActivity {
                 tl.addView(tr, new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
             }
 
-            Log.i("tgrable", "SharedPreferences contains " + visited + " item(s)");
             setVisited(visited, mArry.length());
 
         }
