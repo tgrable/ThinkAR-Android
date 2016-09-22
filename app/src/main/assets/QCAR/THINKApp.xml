@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="thINK2016-postcards37" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards35" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards34" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards33" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards32" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards31" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards30" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards29" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards28" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards27" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards26" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards25" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards24" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards23" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards22" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards21" size="800.000000 1116.279053" />
+    <ImageTarget name="thINK2016-postcards20" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards19" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards18" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards17" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards16" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards15" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards14" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards13" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards12" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards11" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards10" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards9" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards8" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards7" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards6" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards5" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards4" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards3" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards2" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards" size="800.000000 1116.000000" />
+  </Tracking>
+</QCARConfig>

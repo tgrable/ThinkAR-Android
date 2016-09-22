@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The first child in the layout is for the main Activity UI-->
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bkgrd_fullscreen">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/think_logo_white"
+            android:layout_marginLeft="@dimen/xlarge_horizontal_margin"
+            android:layout_marginRight="@dimen/xlarge_horizontal_margin"
+            android:layout_marginTop="@dimen/xlarge_vertical_margin"
+            android:layout_marginBottom="@dimen/xlarge_vertical_margin"
+            android:contentDescription="@string/think_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_body"
+            android:layout_marginLeft="@dimen/large_horizontal_margin"
+            android:layout_marginRight="@dimen/large_horizontal_margin"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/TextViewCustomFont_h2"/>
+
+        <!-- //TODO: move values -->
+        <Button
+            android:id="@+id/angry_btn"
+            android:text="@string/btn_go"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_width="@dimen/btn_go_width"
+            android:layout_height="@dimen/btn_go_height"
+            android:background="@drawable/go_buttonshape"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/large_vertical_margin"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <!-- Side navigation drawer UI -->
+    <LinearLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="@color/colorGray"
+        android:padding="@dimen/small_vertical_margin" >
+
+        <ListView
+            android:id="@+id/navList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:divider="@color/colorWhite"
+            android:dividerHeight="1sp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@color/colorGray" />
+
+        <include layout="@layout/drawer_layout" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

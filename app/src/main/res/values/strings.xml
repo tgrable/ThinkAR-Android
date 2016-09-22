@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">thINKAR</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_download">Download a Marker</string>
+    <string name="title_activity_about">About thINK</string>
+    <string name="title_activity_contact">Contact thINK</string>
+
+    <string name="think_logo">thINK Logo</string>
+
+    <!-- Nav Drawer Content -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string-array name="nav_array">
+        <item>AR Browser</item>
+        <item>thINK 2016</item>
+        <item>About Solimar</item>
+        <item>Contact Solimar</item>
+        <item>Download a Marker</item>
+    </string-array>
+    <string name="drawer_footer">© 2016 thINK</string>
+
+    <!-- ActivityMain Content -->
+    <string name="main_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in mollis sem, nec luctus ligula. Duis ullamcorper turpis ac purus pretium lacinia non ut metus.</string>
+    <string name="btn_go">GO</string>
+
+    <!-- ActivityAbout Content -->
+    <string name="about_title">Headline Placeholder\nSubhead Placeholder</string>
+    <string name="about_body">SAliquam sed augue tincidunt, suscipit velit nec, malesuada mauris. Phasellus ac lacus est. Nam eu erat a nibh sagittis venenatis eget sed elit. Aliquam
+        tincidunt nisi vel augue gravida, vel lacinia nisl varius. Praesent pretium varius nulla at viverra.</string>
+
+    <!-- ActivityContact Content -->
+    <string name="contact_title">Contact thINK</string>
+    <string name="contact_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non blandit orci, id condimentum lacus.</string>
+    <string name="contact_phone">555-555-5555</string>
+    <string name="contact_email">email@think.com</string>
+    <string name="contact_footer">© 2016 thINK</string>
+
+    <!-- ActivityDownload Content -->
+    <string name="download_message">Tap the image to print.</string>
+
+    <!-- ActivityThink Content -->
+    <string name="think__table_status">Status</string>
+    <string name="think__table_vendor">Vendor</string>
+    <string name="think__table_booth">Booth</string>
+    <string name="think_circle_label">0/30</string>
+
+    <!-- ActivityThink Content -->
+    <string name="rules_title">How to Play the Game</string>
+    <string name="rules_body">Mauris ut porttitor metus. Nam posuere ut urna vitae vehicula. Phasellus nec pellentesque est. Donec sed facilisis libero. In nisl libero, convallis a
+        elementum nec, posuere vel nulla. Sed semper mauris arcu, nec ullamcorper odio vestibulum sit amet. Vivamus a fermentum metus, ut vulputate nisi. Morbi venenatis hendrerit
+        bibendum. Nam congue sodales arcu, sagittis porta metus ultrices id.\n\nVivamus viverra, sem id lacinia suscipit, arcu nunc scelerisque nisi, luctus feugiat magna arcu placerat
+        nulla. Etiam tristique pulvinar accumsan. In dignissim, urna ac pharetra hendrerit, orci justo porta neque, vel suscipit elit eros a dui. Pellentesque velit lorem, suscipit sit
+        amet arcu ut, commodo cursus magna. Mauris elementum metus sed tellus tristique sagittis. Donec gravida erat dui, ut accumsan magna luctus in. Donec vulputate non magna ullamcorper
+        mollis. Nulla lectus turpis, adipiscing ut mattis a, sollicitudin ac dolor. Maecenas nunc libero, dignissim a neque ac, sollicitudin suscipit ipsum. Curabitur nec varius velit.\n\nVivamus viverra, sem id lacinia suscipit, arcu nunc scelerisque nisi, luctus feugiat magna arcu placerat
+        nulla. Etiam tristique pulvinar accumsan. In dignissim, urna ac pharetra hendrerit, orci justo porta neque, vel suscipit elit eros a dui. Pellentesque velit lorem, suscipit sit
+        amet arcu ut, commodo cursus magna. Mauris elementum metus sed tellus tristique sagittis. Donec gravida erat dui, ut accumsan magna luctus in. Donec vulputate non magna ullamcorper
+        mollis. Nulla lectus turpis, adipiscing ut mattis a, sollicitudin ac dolor. Maecenas nunc libero, dignissim a neque ac, sollicitudin suscipit ipsum. Curabitur nec varius velit.</string>
+
+</resources>
