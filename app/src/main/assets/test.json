@@ -1,0 +1,12 @@
+{
+	"vendors": [{
+		"name": "Linear Motion",
+		"booth": "1"
+	}, {
+		"name": "Constant Acceleration Motion",
+		"booth": "2"
+	}, {
+		"name": "Projectile Motion",
+		"booth": "3"
+	}]
+}
