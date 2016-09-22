@@ -1,5 +1,5 @@
 # thINKARAndroid
-Android AR app for thINK AR Partner Pavilion App built in Android Studio for Android 6
+Android AR app for thINK AR Partner Pavilion built in Android Studio for Android 6
 
 ## Technologies
 
