@@ -1,12 +1,135 @@
 {
-	"vendors": [{
-		"name": "Linear Motion",
-		"booth": "1"
-	}, {
-		"name": "Constant Acceleration Motion",
-		"booth": "2"
-	}, {
-		"name": "Projectile Motion",
-		"booth": "3"
-	}]
+  "vendors": [{
+    "name": "Appvion",
+    "booth": "1",
+    "marker_id": ""
+  }, {
+    "name": "Arcis",
+    "booth": "2",
+    "marker_id": ""
+  }, {
+    "name": "BCC Software",
+    "booth": "3",
+    "marker_id": ""
+  }, {
+    "name": "CMC",
+    "booth": "4",
+    "marker_id": ""
+  }, {
+    "name": "Crawford Technologies",
+    "booth": "5",
+    "marker_id": ""
+  }, {
+    "name": "Dalim",
+    "booth": "6",
+    "marker_id": ""
+  }, {
+    "name": "Domtar",
+    "booth": "7",
+    "marker_id": ""
+  }, {
+    "name": "EMT",
+    "booth": "8",
+    "marker_id": ""
+  }, {
+    "name": "Finch",
+    "booth": "9",
+    "marker_id": ""
+  }, {
+    "name": "Georgia Pacific",
+    "booth": "10",
+    "marker_id": ""
+  }, {
+    "name": "GEP",
+    "booth": "11",
+    "marker_id": ""
+  }, {
+    "name": "Glatfelter",
+    "booth": "12",
+    "marker_id": ""
+  }, {
+    "name": "GMC",
+    "booth": "13",
+    "marker_id": ""
+  }, {
+    "name": "International Paper",
+    "booth": "14",
+    "marker_id": ""
+  }, {
+    "name": "Ironsides",
+    "booth": "15",
+    "marker_id": ""
+  }, {
+    "name": "Lindenmeyr",
+    "booth": "16",
+    "marker_id": ""
+  }, {
+    "name": "Mac Papers",
+    "booth": "17",
+    "marker_id": ""
+  }, {
+    "name": "MBO America",
+    "booth": "18",
+    "marker_id": ""
+  }, {
+    "name": "Midland Paper",
+    "booth": "19",
+    "marker_id": ""
+  }, {
+    "name": "Mitsubishi Imaging",
+    "booth": "20",
+    "marker_id": ""
+  }, {
+    "name": "Mondi",
+    "booth": "21",
+    "marker_id": ""
+  }, {
+    "name": "Muller Martini",
+    "booth": "22",
+    "marker_id": ""
+  }, {
+    "name": "Prinova, Inc.",
+    "booth": "23",
+    "marker_id": ""
+  }, {
+    "name": "Rolland",
+    "booth": "24",
+    "marker_id": ""
+  }, {
+    "name": "Sefas",
+    "booth": "25",
+    "marker_id": ""
+  }, {
+    "name": "Spiral",
+    "booth": "26",
+    "marker_id": ""
+  }, {
+    "name": "Standard",
+    "booth": "27",
+    "marker_id": ""
+  }, {
+    "name": "Tecnau",
+    "booth": "28",
+    "marker_id": ""
+  }, {
+    "name": "Tharsten",
+    "booth": "29",
+    "marker_id": ""
+  }, {
+    "name": "TREKK",
+    "booth": "30",
+    "marker_id": ""
+  }, {
+    "name": "Ultimate",
+    "booth": "31",
+    "marker_id": ""
+  }, {
+    "name": "Verso",
+    "booth": "32",
+    "marker_id": ""
+  }, {
+    "name": "Videk",
+    "booth": "33",
+    "marker_id": ""
+  }]
 }

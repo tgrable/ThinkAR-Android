@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Build;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -174,7 +175,6 @@ public class ThinkActivity extends AppCompatActivity {
                 JSONObject vendors = mArry.getJSONObject(i);
 
                 String name = vendors.getString("name");
-                String booth = vendors.getString("booth");
 
                 TableRow tr = new TableRow(this);
                 tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
@@ -186,15 +186,18 @@ public class ThinkActivity extends AppCompatActivity {
                     checkIcon.setImageResource(R.drawable.check_mark);
                     checkIcon.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
                     checkIcon.setPadding(10, 15, 10, 15);
+
+                    tr.setBackgroundColor(Color.LTGRAY);
                     tr.addView(checkIcon);
 
                     visited = visited + 1;
                 }
                 else {
-                    TextView vendorsString = new TextView(this);
-                    vendorsString.setText("");
-                    vendorsString.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
-                    tr.addView(vendorsString);
+                    TextView checkString = new TextView(this);
+                    checkString.setText("");
+                    checkString.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+                    checkString.setMinEms(2);
+                    tr.addView(checkString);
                 }
 
                 TextView vendorsString = new TextView(this);
@@ -208,23 +211,10 @@ public class ThinkActivity extends AppCompatActivity {
                 vendorsString.setPadding(10, 15, 10, 15);
                 tr.addView(vendorsString);
 
-                TextView boothString = new TextView(this);
-                boothString.setText(booth);
-                boothString.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
-                if (Build.VERSION.SDK_INT < 23) {
-                    boothString.setTextAppearance(getApplicationContext(), R.style.TextViewCustomFont_table);
-                } else{
-                    boothString.setTextAppearance(R.style.TextViewCustomFont_table);
-                }
-                boothString.setPadding(10, 15, 10, 15);
-                boothString.setGravity(Gravity.CENTER_HORIZONTAL);
-                tr.addView(boothString);
-
                 tl.addView(tr, new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
             }
 
             setVisited(visited, mArry.length());
-
         }
         catch (JSONException e) {
             e.printStackTrace();

@@ -22,7 +22,7 @@
     <string name="drawer_footer">© 2016 thINK</string>
 
     <!-- ActivityMain Content -->
-    <string name="main_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in mollis sem, nec luctus ligula. Duis ullamcorper turpis ac purus pretium lacinia non ut metus.</string>
+    <string name="main_body">Explore augmented reality experiences at thINK events and in thINK communications.</string>
     <string name="btn_go">GO</string>
 
     <!-- ActivityAbout Content -->
