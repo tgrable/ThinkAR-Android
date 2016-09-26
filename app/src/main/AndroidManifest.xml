@@ -111,6 +111,9 @@
             android:name="com.osterhoutgroup.api.ext"
             android:required="false" />
 
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e5dbfb078f14b5275fab841aae4db0f20e63681d" />
     </application>
 
 </manifest> <!-- android:installLocation="preferExternal" -->
