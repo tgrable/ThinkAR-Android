@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
@@ -9,7 +10,8 @@
         android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bkgrd_fullscreen" />
+        android:src="@drawable/bkgrd_fullscreen"
+        android:contentDescription="@string/think_logo" />
 
     <TextView
         style="@style/TextAppearance.BasicNoPadding"
@@ -22,6 +24,7 @@
         android:layout_alignBottom="@id/myImageView"
         android:layout_margin="1dp"
         android:gravity="bottom|center"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        tools:ignore="RtlHardcoded" />
 
 </RelativeLayout>

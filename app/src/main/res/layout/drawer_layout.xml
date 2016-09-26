@@ -15,7 +15,8 @@
             android:src="@drawable/think_logo_white"
             android:layout_marginTop="@dimen/large_vertical_margin"
             android:layout_marginLeft="@dimen/large_horizontal_margin"
-            android:layout_marginRight="@dimen/large_horizontal_margin" />
+            android:layout_marginRight="@dimen/large_horizontal_margin"
+            android:contentDescription="@string/think_logo" />
 
     </LinearLayout>
 

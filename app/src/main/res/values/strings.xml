@@ -15,8 +15,8 @@
     <string-array name="nav_array">
         <item>AR Browser</item>
         <item>thINK 2016</item>
-        <item>About Solimar</item>
-        <item>Contact Solimar</item>
+        <item>About thINK</item>
+        <item>Contact thINK</item>
         <item>Download a Marker</item>
     </string-array>
     <string name="drawer_footer">© 2016 thINK</string>
