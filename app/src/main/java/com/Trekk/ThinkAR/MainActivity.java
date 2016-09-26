@@ -90,26 +90,26 @@ public class MainActivity extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        startActivity(new Intent(MainActivity.this, ARActivity.class));
-                        break;
-                    case 1:
-                        startActivity(new Intent(MainActivity.this, ThinkActivity.class));
-                        break;
-                    case 2:
-                        startActivity(new Intent(MainActivity.this, AboutActivity.class));
-                        break;
-                    case 3:
-                        startActivity(new Intent(MainActivity.this, ContactActivity.class));
-                        break;
-                    case 4:
-                        startActivity(new Intent(MainActivity.this, DownloadActivity.class));
-                        break;
-                    default:
-                        startActivity(new Intent(MainActivity.this, MainActivity.class));
-                        break;
-                }
+            switch (position) {
+                case 0:
+                    startActivity(new Intent(MainActivity.this, ARActivity.class));
+                    break;
+                case 1:
+                    startActivity(new Intent(MainActivity.this, ThinkActivity.class));
+                    break;
+                case 2:
+                    startActivity(new Intent(MainActivity.this, AboutActivity.class));
+                    break;
+                case 3:
+                    startActivity(new Intent(MainActivity.this, ContactActivity.class));
+                    break;
+                case 4:
+                    startActivity(new Intent(MainActivity.this, DownloadActivity.class));
+                    break;
+                default:
+                    startActivity(new Intent(MainActivity.this, MainActivity.class));
+                    break;
+            }
             }
         });
     }

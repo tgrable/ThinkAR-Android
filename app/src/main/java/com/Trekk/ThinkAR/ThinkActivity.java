@@ -11,7 +11,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -34,7 +33,6 @@ public class ThinkActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ArrayAdapter<String> mAdapter;
     private ActionBarDrawerToggle mDrawerToggle;
-    private View vendorChart;
     private MyView myView;
 
     @Override
@@ -105,26 +103,26 @@ public class ThinkActivity extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        startActivity(new Intent(ThinkActivity.this, ARActivity.class));
-                        break;
-                    case 1:
-                        startActivity(new Intent(ThinkActivity.this, ThinkActivity.class));
-                        break;
-                    case 2:
-                        startActivity(new Intent(ThinkActivity.this, AboutActivity.class));
-                        break;
-                    case 3:
-                        startActivity(new Intent(ThinkActivity.this, ContactActivity.class));
-                        break;
-                    case 4:
-                        startActivity(new Intent(ThinkActivity.this, DownloadActivity.class));
-                        break;
-                    default:
-                        startActivity(new Intent(ThinkActivity.this, MainActivity.class));
-                        break;
-                }
+            switch (position) {
+                case 0:
+                    startActivity(new Intent(ThinkActivity.this, ARActivity.class));
+                    break;
+                case 1:
+                    startActivity(new Intent(ThinkActivity.this, ThinkActivity.class));
+                    break;
+                case 2:
+                    startActivity(new Intent(ThinkActivity.this, AboutActivity.class));
+                    break;
+                case 3:
+                    startActivity(new Intent(ThinkActivity.this, ContactActivity.class));
+                    break;
+                case 4:
+                    startActivity(new Intent(ThinkActivity.this, DownloadActivity.class));
+                    break;
+                default:
+                    startActivity(new Intent(ThinkActivity.this, MainActivity.class));
+                    break;
+            }
             }
         });
     }
@@ -166,7 +164,7 @@ public class ThinkActivity extends AppCompatActivity {
             int visited = 0;
 
             JsonHelper json = new JsonHelper();
-            JSONObject obj = new JSONObject(json.loadDataFromAsset(ThinkActivity.this, "test.json"));
+            JSONObject obj = new JSONObject(json.loadDataFromAsset(ThinkActivity.this, "vendors.json"));
 
             TableLayout tl = (TableLayout) findViewById(R.id.vendor_table);
             JSONArray mArry = obj.getJSONArray("vendors");

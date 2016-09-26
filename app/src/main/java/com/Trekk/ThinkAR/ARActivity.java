@@ -108,32 +108,32 @@ public class ARActivity extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        startActivity(new Intent(ARActivity.this, ARActivity.class));
-                        mUnityPlayer.quit();
-                        break;
-                    case 1:
-                        startActivity(new Intent(ARActivity.this, ThinkActivity.class));
-                        mUnityPlayer.quit();
-                        break;
-                    case 2:
-                        startActivity(new Intent(ARActivity.this, AboutActivity.class));
-                        mUnityPlayer.quit();
-                        break;
-                    case 3:
-                        startActivity(new Intent(ARActivity.this, ContactActivity.class));
-                        mUnityPlayer.quit();
-                        break;
-                    case 4:
-                        startActivity(new Intent(ARActivity.this, DownloadActivity.class));
-                        mUnityPlayer.quit();
-                        break;
-                    default:
-                        startActivity(new Intent(ARActivity.this, MainActivity.class));
-                        mUnityPlayer.quit();
-                        break;
-                }
+            switch (position) {
+                case 0:
+                    startActivity(new Intent(ARActivity.this, ARActivity.class));
+                    mUnityPlayer.quit();
+                    break;
+                case 1:
+                    startActivity(new Intent(ARActivity.this, ThinkActivity.class));
+                    mUnityPlayer.quit();
+                    break;
+                case 2:
+                    startActivity(new Intent(ARActivity.this, AboutActivity.class));
+                    mUnityPlayer.quit();
+                    break;
+                case 3:
+                    startActivity(new Intent(ARActivity.this, ContactActivity.class));
+                    mUnityPlayer.quit();
+                    break;
+                case 4:
+                    startActivity(new Intent(ARActivity.this, DownloadActivity.class));
+                    mUnityPlayer.quit();
+                    break;
+                default:
+                    startActivity(new Intent(ARActivity.this, MainActivity.class));
+                    mUnityPlayer.quit();
+                    break;
+            }
             }
         });
     }

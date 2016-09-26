@@ -88,26 +88,26 @@ public class AboutActivity extends AppCompatActivity {
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        startActivity(new Intent(AboutActivity.this, ARActivity.class));
-                        break;
-                    case 1:
-                        startActivity(new Intent(AboutActivity.this, ThinkActivity.class));
-                        break;
-                    case 2:
-                        startActivity(new Intent(AboutActivity.this, AboutActivity.class));
-                        break;
-                    case 3:
-                        startActivity(new Intent(AboutActivity.this, ContactActivity.class));
-                        break;
-                    case 4:
-                        startActivity(new Intent(AboutActivity.this, DownloadActivity.class));
-                        break;
-                    default:
-                        startActivity(new Intent(AboutActivity.this, MainActivity.class));
-                        break;
-                }
+            switch (position) {
+                case 0:
+                    startActivity(new Intent(AboutActivity.this, ARActivity.class));
+                    break;
+                case 1:
+                    startActivity(new Intent(AboutActivity.this, ThinkActivity.class));
+                    break;
+                case 2:
+                    startActivity(new Intent(AboutActivity.this, AboutActivity.class));
+                    break;
+                case 3:
+                    startActivity(new Intent(AboutActivity.this, ContactActivity.class));
+                    break;
+                case 4:
+                    startActivity(new Intent(AboutActivity.this, DownloadActivity.class));
+                    break;
+                default:
+                    startActivity(new Intent(AboutActivity.this, MainActivity.class));
+                    break;
+            }
             }
         });
     }
