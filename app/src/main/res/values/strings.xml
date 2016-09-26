@@ -57,5 +57,7 @@
         nulla. Etiam tristique pulvinar accumsan. In dignissim, urna ac pharetra hendrerit, orci justo porta neque, vel suscipit elit eros a dui. Pellentesque velit lorem, suscipit sit
         amet arcu ut, commodo cursus magna. Mauris elementum metus sed tellus tristique sagittis. Donec gravida erat dui, ut accumsan magna luctus in. Donec vulputate non magna ullamcorper
         mollis. Nulla lectus turpis, adipiscing ut mattis a, sollicitudin ac dolor. Maecenas nunc libero, dignissim a neque ac, sollicitudin suscipit ipsum. Curabitur nec varius velit.</string>
+    <string name="instant_winner_body">You’re An Instant Winner! Claim your prize at the Canon Solutions America area</string>
+    <string name="instant_winner">Instant Winner</string>
 
 </resources>

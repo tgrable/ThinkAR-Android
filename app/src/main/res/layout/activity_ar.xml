@@ -13,9 +13,42 @@
         android:orientation="vertical">
 
         <FrameLayout
-            android:id="@+id/fl_forUnity"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fl_forUnity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/instant_winner_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xxlarge_vertical_margin"
+                    android:src="@drawable/img_instantwin"
+                    android:contentDescription="@string/instant_winner" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instant_winner_body"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/xxlarge_horizontal_margin"
+                    android:layout_marginRight="@dimen/xxlarge_horizontal_margin"
+                    android:layout_marginTop="255dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+
+            </FrameLayout>
+
         </FrameLayout>
 
     </android.support.v7.widget.LinearLayoutCompat>
