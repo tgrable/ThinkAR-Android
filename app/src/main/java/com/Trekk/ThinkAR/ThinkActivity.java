@@ -173,13 +173,14 @@ public class ThinkActivity extends AppCompatActivity {
                 JSONObject vendors = mArry.getJSONObject(i);
 
                 String name = vendors.getString("name");
+                String markerName = vendors.getString("marker_id");
 
                 TableRow tr = new TableRow(this);
                 tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
 
-                SharedPreferences sharedPref = getSharedPreferences("vendor_id", MODE_PRIVATE);
+                SharedPreferences sharedPref = getSharedPreferences(markerName, MODE_PRIVATE);
 
-                if (sharedPref.contains(name)) {
+                if (sharedPref.contains(markerName)) {
                     ImageView checkIcon = new ImageView(this);
                     checkIcon.setImageResource(R.drawable.check_mark);
                     checkIcon.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));

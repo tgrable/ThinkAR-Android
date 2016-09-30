@@ -8,16 +8,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.trekk.thinkconference.RulesActivity"
+    tools:context="com.Trekk.ThinkAR.RulesActivity"
     android:orientation="vertical">
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
@@ -28,36 +29,103 @@
                 tools:ignore="RtlHardcoded"
                 android:contentDescription="@string/think_logo" />
 
-            <TextView
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/rules_title"
-                android:layout_marginTop="@dimen/small_vertical_margin"
-                android:layout_marginLeft="@dimen/small_vertical_margin"
-                android:layout_marginRight="@dimen/small_vertical_margin"
-                android:textAppearance="@style/TextViewCustomFont_h1" />
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/rules_body"
-                android:layout_marginTop="@dimen/small_vertical_margin"
-                android:layout_marginLeft="@dimen/small_vertical_margin"
-                android:layout_marginRight="@dimen/small_vertical_margin"
-                android:textAppearance="@style/TextViewCustomFont_body" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/contact_footer"
-                android:gravity="center_horizontal|bottom"
-                android:layout_gravity="bottom"
-                android:layout_alignParentBottom="true"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:textAppearance="@style/TextViewCustomFont_body" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rules_title"
+                        android:layout_marginTop="@dimen/small_vertical_margin"
+                        android:layout_marginLeft="@dimen/small_vertical_margin"
+                        android:layout_marginRight="@dimen/small_vertical_margin"
+                        android:textAppearance="@style/TextViewCustomFont_h1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rules_subheader"
+                        android:layout_marginTop="@dimen/small_vertical_margin"
+                        android:layout_marginLeft="@dimen/small_vertical_margin"
+                        android:layout_marginRight="@dimen/small_vertical_margin"
+                        android:textAppearance="@style/TextViewCustomFont_h3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rules_body"
+                        android:layout_marginTop="@dimen/small_vertical_margin"
+                        android:layout_marginLeft="@dimen/small_vertical_margin"
+                        android:layout_marginRight="@dimen/small_vertical_margin"
+                        android:textAppearance="@style/TextViewCustomFont_body" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rules_list_1"
+                        android:layout_marginTop="@dimen/small_vertical_margin"
+                        android:layout_marginLeft="@dimen/small_vertical_margin"
+                        android:layout_marginRight="@dimen/small_vertical_margin"
+                        android:textAppearance="@style/TextViewCustomFont_body" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rules_list_2"
+                        android:layout_marginTop="@dimen/small_vertical_margin"
+                        android:layout_marginLeft="@dimen/small_vertical_margin"
+                        android:layout_marginRight="@dimen/small_vertical_margin"
+                        android:textAppearance="@style/TextViewCustomFont_body" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rules_list_3"
+                        android:layout_marginTop="@dimen/small_vertical_margin"
+                        android:layout_marginLeft="@dimen/small_vertical_margin"
+                        android:layout_marginRight="@dimen/small_vertical_margin"
+                        android:textAppearance="@style/TextViewCustomFont_body" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rules_list_4"
+                        android:layout_marginTop="@dimen/small_vertical_margin"
+                        android:layout_marginLeft="@dimen/small_vertical_margin"
+                        android:layout_marginRight="@dimen/small_vertical_margin"
+                        android:textAppearance="@style/TextViewCustomFont_body" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rules_disclaimer"
+                        android:layout_marginTop="@dimen/large_vertical_margin"
+                        android:layout_marginLeft="@dimen/small_vertical_margin"
+                        android:layout_marginRight="@dimen/small_vertical_margin"
+                        android:textAppearance="@style/TextViewCustomFont_body_footer" />
+
+                </LinearLayout>
+
+            </ScrollView>
 
         </LinearLayout>
 
-    </ScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_footer"
+            android:gravity="center_horizontal|bottom"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:textAppearance="@style/TextViewCustomFont_body" />
+
+    </RelativeLayout>
 
 </LinearLayout>

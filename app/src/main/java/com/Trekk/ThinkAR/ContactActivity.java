@@ -9,6 +9,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -32,8 +33,8 @@ public class ContactActivity extends AppCompatActivity {
     private ArrayAdapter<String> mAdapter;
 
     private ActionBarDrawerToggle mDrawerToggle;
-    private TextView phoneLink;
-    private TextView emailLink;
+
+    private TextView mLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -146,27 +147,14 @@ public class ContactActivity extends AppCompatActivity {
     }
 
     private void addListenerOnButton() {
-        phoneLink = (TextView)findViewById(R.id.contact_phone);
-        phoneLink.setOnClickListener(new View.OnClickListener() {
+        mLink = (TextView) findViewById(R.id.contact_link);
+//        mLink.setMovementMethod(LinkMovementMethod.getInstance());
+        mLink.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:" + phoneLink.getText().toString().replace("-","")));
-                startActivity(intent);
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://thinkconference.thinkforum.com/contact"));
+                startActivity(browserIntent);
             }
-        });
-
-        emailLink = (TextView)findViewById(R.id.contact_email);
-        emailLink.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
-                 Intent i = new Intent(Intent.ACTION_SEND);
-                 i.setType("message/rfc822");
-                 i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"tgrable@trekk.com"});
-                 i.putExtra(Intent.EXTRA_SUBJECT, "thINK AR App");
-
-                 startActivity(Intent.createChooser(i, "Send mail..."));
-             }
         });
     }
 

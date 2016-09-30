@@ -26,15 +26,16 @@
     <string name="btn_go">GO</string>
 
     <!-- ActivityAbout Content -->
-    <string name="about_title">Headline Placeholder\nSubhead Placeholder</string>
-    <string name="about_body">SAliquam sed augue tincidunt, suscipit velit nec, malesuada mauris. Phasellus ac lacus est. Nam eu erat a nibh sagittis venenatis eget sed elit. Aliquam
-        tincidunt nisi vel augue gravida, vel lacinia nisl varius. Praesent pretium varius nulla at viverra.</string>
+    <string name="about_body"><b>thINK</b> is an independent community of Canon Solutions America Production Print customers, solution partners, and print industry experts. Led by some of
+        the most successful inkjet service providers in the country, it provides a forum for members to network, gain knowledge, discuss common challenges, and share best practices.\n\nThe
+        inaugural event of the community of Canon Solutions America Production Print inkjet customers drew more than 350 attendees, making it the largest user group event for inkjet
+        production printing. <b>thINK</b> 2016 promises to be even bigger and better – with expanded conference sessions and projected attendance of more than 400. </string>
 
     <!-- ActivityContact Content -->
     <string name="contact_title">Contact thINK</string>
-    <string name="contact_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non blandit orci, id condimentum lacus.</string>
-    <string name="contact_phone">555-555-5555</string>
-    <string name="contact_email">email@think.com</string>
+    <string name="contact_body">The thINK Executive Director and Board Members welcome your input, questions, and comments. Would you like to share your ideas, opinions, and best practices
+        with the community? Do you have suggestions for a blog post, educational session, or community resource that will help you grow your business? Have a question about how you can get
+        involved? Please <b>click on this link</b> and fill out the form to send us a message.</string>
     <string name="contact_footer">© 2016 thINK</string>
 
     <!-- ActivityDownload Content -->
@@ -48,15 +49,15 @@
 
     <!-- ActivityThink Content -->
     <string name="rules_title">How to Play the Game</string>
-    <string name="rules_body">Mauris ut porttitor metus. Nam posuere ut urna vitae vehicula. Phasellus nec pellentesque est. Donec sed facilisis libero. In nisl libero, convallis a
-        elementum nec, posuere vel nulla. Sed semper mauris arcu, nec ullamcorper odio vestibulum sit amet. Vivamus a fermentum metus, ut vulputate nisi. Morbi venenatis hendrerit
-        bibendum. Nam congue sodales arcu, sagittis porta metus ultrices id.\n\nVivamus viverra, sem id lacinia suscipit, arcu nunc scelerisque nisi, luctus feugiat magna arcu placerat
-        nulla. Etiam tristique pulvinar accumsan. In dignissim, urna ac pharetra hendrerit, orci justo porta neque, vel suscipit elit eros a dui. Pellentesque velit lorem, suscipit sit
-        amet arcu ut, commodo cursus magna. Mauris elementum metus sed tellus tristique sagittis. Donec gravida erat dui, ut accumsan magna luctus in. Donec vulputate non magna ullamcorper
-        mollis. Nulla lectus turpis, adipiscing ut mattis a, sollicitudin ac dolor. Maecenas nunc libero, dignissim a neque ac, sollicitudin suscipit ipsum. Curabitur nec varius velit.\n\nVivamus viverra, sem id lacinia suscipit, arcu nunc scelerisque nisi, luctus feugiat magna arcu placerat
-        nulla. Etiam tristique pulvinar accumsan. In dignissim, urna ac pharetra hendrerit, orci justo porta neque, vel suscipit elit eros a dui. Pellentesque velit lorem, suscipit sit
-        amet arcu ut, commodo cursus magna. Mauris elementum metus sed tellus tristique sagittis. Donec gravida erat dui, ut accumsan magna luctus in. Donec vulputate non magna ullamcorper
-        mollis. Nulla lectus turpis, adipiscing ut mattis a, sollicitudin ac dolor. Maecenas nunc libero, dignissim a neque ac, sollicitudin suscipit ipsum. Curabitur nec varius velit.</string>
+    <string name="rules_subheader">VISIT THE PARTNER PAVILION!</string>
+    <string name="rules_body">Each partner has a special postcard waiting for you. All of them have an augmented reality experience inside. Some could make you an <b>instant winner</b>.</string>
+    <string name="rules_list_1">1. Collect a greeting at every partner table</string>
+    <string name="rules_list_2">2. Watch the AR experience with the thINK AR app to find out if you are an instant winner</string>
+    <string name="rules_list_3">3. Visit the TREKK booth to get your last greeting and enter the grand prize drawing</string>
+    <string name="rules_list_4">4. Post about it on social media using the hashtag: <b>#GreetingsfromthINK</b></string>
+    <string name="rules_disclaimer">*Grand Prize winners (chosen by random drawing) will be announced Wednesday morning.</string>
+
+    <!-- InstantWinner Content -->
     <string name="instant_winner_body">You’re An Instant Winner! Claim your prize at the Canon Solutions America area</string>
     <string name="instant_winner">Instant Winner</string>
 

@@ -30,34 +30,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/contact_link"
                 android:text="@string/contact_body"
                 android:layout_marginTop="@dimen/small_vertical_margin"
                 android:layout_marginLeft="@dimen/small_vertical_margin"
                 android:layout_marginRight="@dimen/small_vertical_margin"
                 android:textAppearance="@style/TextViewCustomFont_body"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/contact_phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/contact_phone"
-                android:layout_marginTop="@dimen/small_vertical_margin"
-                android:layout_marginLeft="@dimen/small_vertical_margin"
-                android:layout_marginRight="@dimen/small_vertical_margin"
-                android:textAppearance="@style/TextViewCustomFont_link"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/contact_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/contact_email"
-                android:layout_marginTop="@dimen/small_vertical_margin"
-                android:layout_marginLeft="@dimen/small_vertical_margin"
-                android:layout_marginRight="@dimen/small_vertical_margin"
-                android:textAppearance="@style/TextViewCustomFont_link"
-                android:gravity="center_horizontal" />
+                android:autoLink="web" />
 
         </LinearLayout>
 

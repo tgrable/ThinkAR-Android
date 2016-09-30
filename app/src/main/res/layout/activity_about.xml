@@ -44,15 +44,6 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about_title"
-                android:layout_marginTop="@dimen/small_vertical_margin"
-                android:layout_marginLeft="@dimen/small_vertical_margin"
-                android:layout_marginRight="@dimen/small_vertical_margin"
-                android:textAppearance="@style/TextViewCustomFont_h1" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/about_body"
                 android:layout_marginTop="@dimen/small_vertical_margin"
                 android:layout_marginLeft="@dimen/small_vertical_margin"

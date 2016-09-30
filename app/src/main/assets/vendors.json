@@ -2,134 +2,134 @@
   "vendors": [{
     "name": "Appvion",
     "booth": "1",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards1"
   }, {
     "name": "Arcis",
     "booth": "2",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards2"
   }, {
     "name": "BCC Software",
     "booth": "3",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards3"
   }, {
     "name": "CMC",
     "booth": "4",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards4"
   }, {
     "name": "Crawford Technologies",
     "booth": "5",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards5"
   }, {
     "name": "Dalim",
     "booth": "6",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards6"
   }, {
     "name": "Domtar",
     "booth": "7",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards7"
   }, {
     "name": "EMT",
     "booth": "8",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards8"
   }, {
     "name": "Finch",
     "booth": "9",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards9"
   }, {
     "name": "Georgia Pacific",
     "booth": "10",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards10"
   }, {
     "name": "GEP",
     "booth": "11",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards11"
   }, {
     "name": "Glatfelter",
     "booth": "12",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards12"
   }, {
     "name": "GMC",
     "booth": "13",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards13"
   }, {
     "name": "International Paper",
     "booth": "14",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards14"
   }, {
     "name": "Ironsides",
     "booth": "15",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards15"
   }, {
     "name": "Lindenmeyr",
     "booth": "16",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards16"
   }, {
     "name": "Mac Papers",
     "booth": "17",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards17"
   }, {
     "name": "MBO America",
     "booth": "18",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards18"
   }, {
     "name": "Midland Paper",
     "booth": "19",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards19"
   }, {
     "name": "Mitsubishi Imaging",
     "booth": "20",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards20"
   }, {
     "name": "Mondi",
     "booth": "21",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards21"
   }, {
     "name": "Muller Martini",
     "booth": "22",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards22"
   }, {
     "name": "Prinova, Inc.",
     "booth": "23",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards23"
   }, {
     "name": "Rolland",
     "booth": "24",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards24"
   }, {
     "name": "Sefas",
     "booth": "25",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards25"
   }, {
     "name": "Spiral",
     "booth": "26",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards26"
   }, {
     "name": "Standard",
     "booth": "27",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards27"
   }, {
     "name": "Tecnau",
     "booth": "28",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards28"
   }, {
     "name": "Tharsten",
     "booth": "29",
-    "marker_id": ""
+    "marker_id": "thINK2016-postcards29"
   }, {
     "name": "TREKK",
-    "booth": "30",
-    "marker_id": ""
+    "booth": "38",
+    "marker_id": "thINK2016-postcards38"
   }, {
     "name": "Ultimate",
-    "booth": "31",
-    "marker_id": ""
+    "booth": "30",
+    "marker_id": "thINK2016-postcards30"
   }, {
     "name": "Verso",
-    "booth": "32",
-    "marker_id": ""
+    "booth": "31",
+    "marker_id": "thINK2016-postcards31"
   }, {
     "name": "Videk",
-    "booth": "33",
-    "marker_id": ""
+    "booth": "32",
+    "marker_id": "thINK2016-postcards32"
   }]
 }

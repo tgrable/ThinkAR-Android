@@ -1,8 +1,11 @@
 package com.Trekk.ThinkAR;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,12 +19,18 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 import com.unity3d.player.UnityPlayer;
 
+import java.util.Map;
+
 public class ARActivity extends AppCompatActivity {
 
+    private static final String TAG = "TimGrable";
     protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
 
     private ListView mDrawerList;
@@ -32,11 +41,14 @@ public class ARActivity extends AppCompatActivity {
 
     //Declare a FrameLayout object
     FrameLayout fl_forUnity;
+    private FrameLayout winnerFrame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ar);
+
+        winnerFrame = (FrameLayout)findViewById(R.id.instant_winner_frame);
 
         mUnityPlayer = new UnityPlayerWrapper(this);
 
@@ -201,4 +213,39 @@ public class ARActivity extends AppCompatActivity {
     @Override public boolean onKeyDown(int keyCode, KeyEvent event)   { return mUnityPlayer.injectEvent(event); }
     @Override public boolean onTouchEvent(MotionEvent event)          { return mUnityPlayer.injectEvent(event); }
     /*API12*/ public boolean onGenericMotionEvent(MotionEvent event)  { return mUnityPlayer.injectEvent(event); }
+
+
+    /**
+     *
+     * These methods get called from the Unity player
+     * each time an experience is loaded from the marker.
+     *
+     **/
+    public void didReturnName(String markerName) {
+
+        // Check SharedPreferences for markerName
+        // If it does not exist add it to SharedPreferences
+        SharedPreferences sharedPref = getSharedPreferences(markerName, MODE_PRIVATE);
+        if (!sharedPref.contains(markerName)) {
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString(markerName, markerName);
+            editor.commit();
+        }
+    }
+
+    public void didReturnWinner(String winner) {
+
+        // If winner equals true display the winner overlay message
+        if (winner.equals("true")) {
+
+            // setVisibility needs to be run on the main thread
+            ARActivity.this.runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+                    winnerFrame.setVisibility(View.VISIBLE);
+                }
+            });
+        }
+    }
 }
