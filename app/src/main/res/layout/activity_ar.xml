@@ -47,6 +47,19 @@
                     android:textSize="10sp"
                     tools:ignore="SmallSp" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/winner_close"
+                    android:text="@string/close"
+                    android:gravity="right"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/small_vertical_margin"
+                    android:layout_marginRight="@dimen/small_horizontal_margin"
+                    android:textSize="40sp"
+                    tools:ignore="RtlHardcoded,SmallSp" />
+
             </FrameLayout>
 
         </FrameLayout>

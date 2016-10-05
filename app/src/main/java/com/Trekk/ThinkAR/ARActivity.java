@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -43,6 +44,8 @@ public class ARActivity extends AppCompatActivity {
     FrameLayout fl_forUnity;
     private FrameLayout winnerFrame;
 
+    private TextView mWinnerClose;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +70,8 @@ public class ARActivity extends AppCompatActivity {
 
         addDrawerItems();
         setupDrawer();
+
+        addListenerOnButton();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -168,6 +173,22 @@ public class ARActivity extends AppCompatActivity {
 
         mDrawerToggle.setDrawerIndicatorEnabled(true);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
+    }
+
+    private void addListenerOnButton() {
+        mWinnerClose = (TextView)findViewById(R.id.winner_close);
+        mWinnerClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // setVisibility needs to be run on the main thread
+                ARActivity.this.runOnUiThread(new Runnable() {
+
+                    @Override
+                    public void run() {winnerFrame.setVisibility(View.GONE);
+                    }
+                });
+            }
+        });
     }
 
     // Quit Unity

@@ -60,5 +60,6 @@
     <!-- InstantWinner Content -->
     <string name="instant_winner_body">You’re An Instant Winner! Claim your prize at the Canon Solutions America area</string>
     <string name="instant_winner">Instant Winner</string>
+    <string name="close">X</string>
 
 </resources>

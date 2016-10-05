@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="thINK2016-postcards30" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-postcards31" size="800.000000 1114.838745" />
     <ImageTarget name="thINK2016-postcards37" size="800.000000 1116.000000" />
     <ImageTarget name="thINK2016-postcards35" size="800.000000 1116.000000" />
     <ImageTarget name="thINK2016-postcards34" size="800.000000 1116.000000" />
     <ImageTarget name="thINK2016-postcards33" size="800.000000 1116.000000" />
     <ImageTarget name="thINK2016-postcards32" size="800.000000 1116.000000" />
-    <ImageTarget name="thINK2016-postcards31" size="800.000000 1116.000000" />
-    <ImageTarget name="thINK2016-postcards30" size="800.000000 1116.000000" />
     <ImageTarget name="thINK2016-postcards29" size="800.000000 1116.000000" />
     <ImageTarget name="thINK2016-postcards28" size="800.000000 1116.000000" />
     <ImageTarget name="thINK2016-postcards27" size="800.000000 1116.000000" />
@@ -37,5 +37,7 @@
     <ImageTarget name="thINK2016-postcards3" size="800.000000 1116.000000" />
     <ImageTarget name="thINK2016-postcards2" size="800.000000 1116.000000" />
     <ImageTarget name="thINK2016-postcards" size="800.000000 1116.000000" />
+    <ImageTarget name="thINK2016-marker-submit" size="413.000000 576.000000" />
+    <ImageTarget name="thINK2016-marker-flamingo" size="413.000000 576.000000" />
   </Tracking>
 </QCARConfig>

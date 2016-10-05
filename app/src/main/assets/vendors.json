@@ -2,7 +2,7 @@
   "vendors": [{
     "name": "Appvion",
     "booth": "1",
-    "marker_id": "thINK2016-postcards1"
+    "marker_id": "thINK2016-postcards"
   }, {
     "name": "Arcis",
     "booth": "2",
@@ -117,8 +117,8 @@
     "marker_id": "thINK2016-postcards29"
   }, {
     "name": "TREKK",
-    "booth": "38",
-    "marker_id": "thINK2016-postcards38"
+    "booth": "37",
+    "marker_id": "thINK2016-postcards37"
   }, {
     "name": "Ultimate",
     "booth": "30",
