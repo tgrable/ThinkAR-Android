@@ -29,6 +29,7 @@
                 android:visibility="gone">
 
                 <ImageView
+                    android:id="@+id/img_instantwin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/xxlarge_vertical_margin"
@@ -36,29 +37,27 @@
                     android:contentDescription="@string/instant_winner" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/txt_instantwin"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/instant_winner_body"
-                    android:gravity="center"
-                    android:layout_marginLeft="@dimen/xxlarge_horizontal_margin"
-                    android:layout_marginRight="@dimen/xxlarge_horizontal_margin"
                     android:layout_marginTop="255dp"
                     android:textColor="@color/colorWhite"
                     android:textSize="10sp"
-                    tools:ignore="SmallSp" />
+                    tools:ignore="SmallSp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                <ImageView
                     android:id="@+id/winner_close"
-                    android:text="@string/close"
-                    android:gravity="right"
-                    android:textAlignment="gravity"
-                    android:textColor="@color/colorWhite"
-                    android:layout_marginTop="@dimen/small_vertical_margin"
-                    android:layout_marginRight="@dimen/small_horizontal_margin"
-                    android:textSize="40sp"
-                    tools:ignore="RtlHardcoded,SmallSp" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_vertical_margin"
+                    android:layout_marginRight="@dimen/medium_horizontal_margin"
+                    android:src="@drawable/x_mark"
+                    android:layout_gravity="right"
+                    android:contentDescription="@string/instant_winner"
+                    tools:ignore="RtlHardcoded" />
 
             </FrameLayout>
 

@@ -11,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -44,7 +45,8 @@ public class ARActivity extends AppCompatActivity {
     FrameLayout fl_forUnity;
     private FrameLayout winnerFrame;
 
-    private TextView mWinnerClose;
+    private ImageView mWinnerClose;
+    private TextView mWinnerText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +77,26 @@ public class ARActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+
+        mWinnerText = (TextView) findViewById(R.id.txt_instantwin);
+
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+
+        switch(metrics.densityDpi){
+            case DisplayMetrics.DENSITY_LOW:
+                mWinnerText.setWidth(170 - 15);
+                break;
+            case DisplayMetrics.DENSITY_MEDIUM:
+                mWinnerText.setWidth(227 - 20);
+                break;
+            case DisplayMetrics.DENSITY_HIGH:
+                mWinnerText.setWidth(340 - 30);
+                break;
+            default:
+                mWinnerText.setWidth(454 - 40);
+                break;
+        }
     }
 
     @Override
@@ -176,7 +198,7 @@ public class ARActivity extends AppCompatActivity {
     }
 
     private void addListenerOnButton() {
-        mWinnerClose = (TextView)findViewById(R.id.winner_close);
+        mWinnerClose = (ImageView)findViewById(R.id.winner_close);
         mWinnerClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -243,7 +265,6 @@ public class ARActivity extends AppCompatActivity {
      *
      **/
     public void didReturnName(String markerName) {
-
         // Check SharedPreferences for markerName
         // If it does not exist add it to SharedPreferences
         SharedPreferences sharedPref = getSharedPreferences(markerName, MODE_PRIVATE);
@@ -255,10 +276,8 @@ public class ARActivity extends AppCompatActivity {
     }
 
     public void didReturnWinner(String winner) {
-
         // If winner equals true display the winner overlay message
         if (winner.equals("true")) {
-
             // setVisibility needs to be run on the main thread
             ARActivity.this.runOnUiThread(new Runnable() {
 
